@@ -14,6 +14,10 @@ const Content = (props) => {
   )
 }
 
+const Temp = (props) => {
+  return <div>hello</div>
+}
+
 const Part = (props) => {
   return (
     <p>
