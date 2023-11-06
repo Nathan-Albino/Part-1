@@ -14,16 +14,6 @@ const Content = (props) => {
   )
 }
 
-const Content = (props) => {
-  return (
-    <div>
-      <Part part={props.parts[0]} />
-      <Part part={props.parts[1]} />
-      <Part part={props.parts[2]} />
-    </div>
-  )
-}
-
 const Temp = (props) => {
   return <div>hello</div>
 }
@@ -85,8 +75,8 @@ const App = () => {
   return (
     <div>
       {left}
-      <button onClick={handleLeftClick}>left</button>
-      <button onClick={handleRightClick}>right</button>
+      <Button onClick={handleLeftClick} left/>
+      <Button onClick={handleRightClick} right/>
       {right}
       <History allClicks={allClicks} />
       <p>total: {total}</p>
